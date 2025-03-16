@@ -3,6 +3,8 @@ package decorator;
 import composite.SmartDevice;
 
 public class ScheduledOperationDecorator extends SmartDeviceDecorator {
+    private boolean isOn;
+
     public ScheduledOperationDecorator(SmartDevice smartDevice) {
         super(smartDevice);
     }
@@ -14,5 +16,9 @@ public class ScheduledOperationDecorator extends SmartDeviceDecorator {
     public void turnOff(){
         System.out.println("Scheduled turn off for " + decoratedDevice.getDeviceType());
         super.turnOff();
+    }
+
+    public boolean isOn() {
+        return isOn;
     }
 }
