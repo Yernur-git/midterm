@@ -16,33 +16,8 @@ Facade Pattern: Provides a simple interface to manage all devices.
 Adapter Pattern: Integrates a legacy lock system.
 
 
-Structure of the project:
+## Structure of the Project
 
-│   ├── adapter/
-│   │   ├── LockAdapter.java
-│   │   ├── LegacyLockSystem.java
-│   │   ├── OldLockSystem.java
-│   │
-│   ├── composite/
-│   │   ├── Light.java
-│   │   ├── Room.java
-│   │   ├── SmartDevice.java
-│   │   ├── Thermostat.java
-│   │
-│   ├── decorator/
-│   │   ├── SmartDeviceDecorator.java
-│   │   ├── ScheduledOperationDecorator.java
-│   │
-│   ├── facade/
-│   │   ├── SmartHomeController.java
-│   │
-│   ├── factory/
-│   │   ├── SmartHomeFactory.java
-│   │   ├── BasicSmartHomeFactory.java
-│   │   ├── AdvancedSmartHomeFactory.java
-│   │
-│   ├── main/
-│   │   ├── SmartHomeDemo.java
-
+SmartHomeProject/ │── src/ │ ├── adapter/ │ │ ├── LockAdapter.java │ │ ├── LegacyLockSystem.java │ │ ├── OldLockSystem.java │ │ │ ├── composite/ │ │ ├── Light.java │ │ ├── Room.java │ │ ├── SmartDevice.java │ │ ├── Thermostat.java │ │ │ ├── decorator/ │ │ ├── SmartDeviceDecorator.java │ │ ├── ScheduledOperationDecorator.java │ │ │ ├── facade/ │ │ ├── SmartHomeController.java │ │ │ ├── factory/ │ │ ├── SmartHomeFactory.java │ │ ├── BasicSmartHomeFactory.java │ │ ├── AdvancedSmartHomeFactory.java │ │ │ ├── main/ │ │ ├── SmartHomeDemo.java │ │── test/ (For unit tests) │── README.md │── .gitignore │── pom.xml / build.gradle (If using Maven or Gradle)
 
 
