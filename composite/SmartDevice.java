@@ -1,0 +1,4 @@
+package composite;
+
+interface SmartDevice {
+}
