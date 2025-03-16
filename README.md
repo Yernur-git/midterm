@@ -18,31 +18,34 @@ Adapter Pattern: Integrates a legacy lock system.
 
 ## Structure of the Project
 
-│   ├── adapter/
-│   │   ├── LockAdapter.java
-│   │   ├── LegacyLockSystem.java
-│   │   ├── OldLockSystem.java
-│   │
-│   ├── composite/
-│   │   ├── Light.java
-│   │   ├── Room.java
-│   │   ├── SmartDevice.java
-│   │   ├── Thermostat.java
-│   │
-│   ├── decorator/
-│   │   ├── SmartDeviceDecorator.java
-│   │   ├── ScheduledOperationDecorator.java
-│   │
-│   ├── facade/
-│   │   ├── SmartHomeController.java
-│   │
-│   ├── factory/
-│   │   ├── SmartHomeFactory.java
-│   │   ├── BasicSmartHomeFactory.java
-│   │   ├── AdvancedSmartHomeFactory.java
-│   │
-│   ├── main/
-│   │   ├── SmartHomeDemo.java
+```
++---adapter
+¦       LegacyLockSystem.java
+¦       LockAdapter.java
+¦       OldLockSystem.java
+¦       
++---composite
+¦       Light.java
+¦       Room.java
+¦       SmartDevice.java
+¦       Thermostat.java
+¦       
++---decorator
+¦       ScheduledOperationDecorator.java
+¦       SmartDeviceDecorator.java
+¦       
++---facade
+¦       SmartHomeController.java
+¦       
++---factory
+¦       AdvancedSmartHomeFactory.java
+¦       BasicSmartHomeFactory.java
+¦       SmartHomeFactory.java
+¦       
++---main
+        SmartHomeDemo.java
+
+```
 
 
 
