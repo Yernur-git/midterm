@@ -32,4 +32,7 @@ public class Room implements SmartDevice{
         return status;
     }
 
+    public String getDeviceType() {
+        return "Room";
+    }
 }

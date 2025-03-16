@@ -7,11 +7,11 @@ public class Light implements SmartDevice{
     public Light(String name) {this.name = name;}
 
     public void turnOn(){
-        System.out.println(name + "light is on");
+        System.out.println(name + " light is on");
     }
 
     public void turnOff(){
-        System.out.println(name + "light is off");
+        System.out.println(name + " light is off");
     }
 
     public String getStatus() {
@@ -24,4 +24,7 @@ public class Light implements SmartDevice{
         return name + " light is " + status;
     }
 
+    public String getDeviceType() {
+        return "Light";
+    }
 }

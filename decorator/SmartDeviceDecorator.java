@@ -15,4 +15,8 @@ abstract class SmartDeviceDecorator implements SmartDevice {
     public String getStatus() {
         return decoratedDevice.getStatus();
     }
+
+    public String getDeviceType() {
+        return decoratedDevice.getDeviceType();
+    }
 }

@@ -7,11 +7,11 @@ public class Thermostat implements SmartDevice {
     public Thermostat(String name) {this.name = name;}
 
     public void turnOn(){
-        System.out.println(name + "thermostat is on");
+        System.out.println(name + " thermostat is on");
     }
 
     public void turnOff(){
-        System.out.println(name + "thermostat is off");
+        System.out.println(name + " thermostat is off");
     }
 
     public String getStatus() {
@@ -22,5 +22,9 @@ public class Thermostat implements SmartDevice {
             status = "OFF";
         }
         return name + " light is " + status;
+    }
+
+    public String getDeviceType() {
+        return "Thermostat";
     }
 }

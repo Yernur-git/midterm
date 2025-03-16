@@ -8,11 +8,11 @@ public class ScheduledOperationDecorator extends SmartDeviceDecorator {
     }
 
     public void turnOn(){
-        System.out.println("Scheduled acivation...");
+        System.out.println("Scheduled turn on for " + decoratedDevice.getDeviceType());
         super.turnOn();
     }
     public void turnOff(){
-        System.out.println("Scheduled deacivation...");
+        System.out.println("Scheduled turn off for " + decoratedDevice.getDeviceType());
         super.turnOff();
     }
 }
