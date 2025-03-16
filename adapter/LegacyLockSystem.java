@@ -1,4 +1,7 @@
 package adapter;
 
-interface LegacyLockSystem {
+public interface LegacyLockSystem {
+    void unlockDoor();
+    void lockDoor();
+    boolean isLocked();
 }
