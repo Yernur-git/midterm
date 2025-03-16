@@ -14,6 +14,10 @@ public class Light implements SmartDevice{
         System.out.println(name + " light is off");
     }
 
+    public boolean isOn() {
+        return isOn;
+    }
+
     public String getStatus() {
         String status;
         if (isOn) {

@@ -5,4 +5,5 @@ public interface SmartDevice {
     void turnOff();
     String getStatus();
     String getDeviceType();
+    boolean isOn();
 }

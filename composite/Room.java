@@ -12,6 +12,10 @@ public class Room implements SmartDevice{
         devices.add(device);
     }
 
+    public void removeDevice(SmartDevice device) {
+        devices.remove(device);
+    }
+
     public void turnOn(){
         for (SmartDevice device : devices) {
             device.turnOn();
@@ -24,12 +28,21 @@ public class Room implements SmartDevice{
         }
     }
 
-    public String getStatus() {
-        String status = name + " contains:\n";
+    public boolean isOn() {
         for (SmartDevice device : devices) {
-            status += " - " + device.getStatus() + "\n";
+            if (device.isOn()) {
+                return true;
+            }
         }
-        return status;
+        return false;
+    }
+
+    public String getStatus() {
+        StringBuilder status = new StringBuilder(name + " contains:\n");
+        for (SmartDevice device : devices) {
+            status.append(" - ").append(device.getStatus()).append("\n");
+        }
+        return status.toString();
     }
 
     public String getDeviceType() {
